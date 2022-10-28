@@ -7,10 +7,14 @@ static const char *fonts[] = {
 	"monospace:size=10"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const char col_bar[]         = "#2c1a1a";
+static const char col_white[]       = "#efefef";
+static const char col_title[]       = "#000000";
+static const char col_cyan[]        = "#5cd5ff";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
+	[SchemeNorm] = { col_white, col_bar },
+	[SchemeSel] = { col_title, col_cyan },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
